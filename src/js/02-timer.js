@@ -70,6 +70,7 @@ class Timer {
             this.updateTimerComponents(timerComponents);
             if (deltaTime <= 1000) {
                 clearInterval(timerId);
+                Notify.success('Ok');
             };
         }, 1000);
 
