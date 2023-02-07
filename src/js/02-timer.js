@@ -54,8 +54,6 @@ const options = {
     },
 };
 
-const userData = flatpickr(refs.inputUserData, options);
-
 class Timer {
     constructor() {
         this.timerId = null;
@@ -84,6 +82,8 @@ class Timer {
 };
 
 const timer = new Timer();
+
+flatpickr(refs.inputUserData, options);
 
 refs.btnStart.addEventListener('click', () => {
     timer.start();
